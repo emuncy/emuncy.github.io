@@ -5,7 +5,7 @@ Projects
     CSS
     JS
 In-Class Assignments
-    ICA1
+    [ICA1](ica/Ellie%20Muncy%20ICA1%20--%20How%20to%20Search.docx)
     ICA2
     ICA3
     ICA4
@@ -21,7 +21,7 @@ In-Class Assignments
     ICA14
     ICA15
 Weekly Assignments
-    WA1
+    [WA1](emuncy.github.io/wa/wa1.html)
     WA2
     WA3
     WA4
