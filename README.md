@@ -6,7 +6,7 @@ Projects
     JS
 In-Class Assignments
     [ICA1](ica/Ellie%20Muncy%20ICA1%20--%20How%20to%20Search.docx)
-    ICA2
+    [ICA2](ica/Muncy_Ellie%20ICA2%20--%20Exploring%20Directory%20Structures%20(Week%202).docx)
     ICA3
     ICA4
     ICA5
@@ -22,7 +22,7 @@ In-Class Assignments
     ICA15
 Weekly Assignments
     [WA1](emuncy.github.io/wa/wa1.html)
-    WA2
+    [WA2](emuncy.github.io/wa/wa2.html)
     WA3
     WA4
     WA5
