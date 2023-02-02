@@ -7,7 +7,7 @@ Projects
 In-Class Assignments
     [ICA1](ica/Ellie%20Muncy%20ICA1%20--%20How%20to%20Search.docx)
     [ICA2](ica/Muncy_Ellie%20ICA2%20--%20Exploring%20Directory%20Structures%20(Week%202).docx)
-    ICA3
+    [ICA3a](ica/ica3a.html) [ICA3b](ica/ica3-part2/index.html)
     ICA4
     ICA5
     ICA6
