@@ -21,9 +21,9 @@ In-Class Assignments
     ICA14
     ICA15
 Weekly Assignments
-    [WA1](emuncy.github.io/wa/wa1.html)
-    [WA2](emuncy.github.io/wa/wa2.html)
-    WA3
+    [WA1](wa/wa1.html)
+    [WA2](wa/wa2.html)
+    [WA3](wa/wa3.html)
     WA4
     WA5
     WA6
