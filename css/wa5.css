@@ -1,0 +1,33 @@
+html,body {
+    height:100%;
+    margin: 0
+}
+.background {
+  min-width:100%;
+  min-height:100% ;
+  position: center;
+}
+
+.crafting {
+    width:20em;
+    height:30em;
+    position: absolute;
+    top: 20mm;
+    right: 0;
+}
+
+
+
+.items {
+    width:7.5em;
+    height:9em;
+    position: absolute;
+    top: 0mm;
+    left: 0;
+}
+
+div img {
+    max-width: 100%;
+    opacity: 70%;
+    box-shadow: 20px 0px 70px -10px blue;
+}
