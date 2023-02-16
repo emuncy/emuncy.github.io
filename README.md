@@ -9,7 +9,7 @@
 - [ICA2](https://emuncy.github.io/ica/Muncy_Ellie%20ICA2%20--%20Exploring%20Directory%20Structures%20(Week%202).docx)
 - [ICA3a](https://emuncy.github.io/ica/ica3a.html) [ICA3b](https://emuncy.github.io/ica/ica3-part2/index.html)
 - [ICA4](http://emuncy.github.io/ica/ica4.html)
-- ICA5
+- [ICA5](http://emuncy.github.io/ica/ica5.html)
 - ICA6
 - ICA7
 - ICA8
@@ -25,7 +25,7 @@
 - [WA2](https://emuncy.github.io/wa/wa2.html)
 - [WA3](https://emuncy.github.io/wa/wa3.html)
 - [WA4](https://emuncy.github.io/wa/wa4.html)
-- WA5
+- [WA5](https://emuncy.github.io/wa/wa5.html)
 - WA6
 - WA7
 - WA8
