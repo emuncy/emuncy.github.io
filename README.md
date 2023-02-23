@@ -10,7 +10,7 @@
 - [ICA3a](https://emuncy.github.io/ica/ica3a.html) [ICA3b](https://emuncy.github.io/ica/ica3-part2/index.html)
 - [ICA4](http://emuncy.github.io/ica/ica4.html)
 - [ICA5](http://emuncy.github.io/ica/ica5.html)
-- ICA6
+- [ICA6](https://emuncy.github.io/ica/ica6/ica6-part1.html)
 - ICA7
 - ICA8
 - ICA9
@@ -26,7 +26,7 @@
 - [WA3](https://emuncy.github.io/wa/wa3.html)
 - [WA4](https://emuncy.github.io/wa/wa4.html)
 - [WA5](https://emuncy.github.io/wa/wa5.html)
-- WA6
+- [WA6](https://emuncy.github.io/wa/wa6.html)
 - WA7
 - WA8
 - WA9
