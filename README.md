@@ -11,7 +11,7 @@
 - [ICA4](http://emuncy.github.io/ica/ica4.html)
 - [ICA5](http://emuncy.github.io/ica/ica5.html)
 - [ICA6](https://emuncy.github.io/ica/ica6/ica6-part1.html)
-- ICA7
+- [ICA7](http://emuncy.github.io/ica/ica7.html)
 - ICA8
 - ICA9
 - ICA10
