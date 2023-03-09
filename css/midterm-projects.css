@@ -1,0 +1,28 @@
+img {
+    width: 100%;
+    height: auto;
+  }
+
+.slideshow {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Optional - enables smooth scrolling on iOS devices */
+  }
+  
+  .slide {
+  flex: 0 0 auto;
+  height: 20%;
+  max-width: 100%;
+  scroll-snap-align: center;
+  padding: 10px;
+  transform: translateX(100%);
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0);
+  }
+}
+  
