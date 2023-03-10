@@ -3,48 +3,86 @@ html{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav {
-    
-    margin: 0;
-    position: sticky;
-    top: 0;
-  }
-  
-  nav ul {
-    margin: 0;
-    background-color: #e3e1e296;
-    padding: 1em;
-    list-style: none;
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    
-  }
-
-  nav a {
-    color: black;
-    text-decoration: none;
-    padding: 1em 5em;
-    font-size: 3vh;
+  img {
+    max-width: 100%;
   }
 
   h1 {
     color: #656F5C;
+    position: relative;
+    left: 45vw;
   }
 
   p {
     color: #031926;
   }
 
-  .logo {
-    /*top: 0;
-    left: 40vw;
-    position: sticky;*/
-    position:sticky;
-    width: 30vw;
-    top: -530px;
-    left: 50%;
-    transform: translateX(-57%);
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0px;
+    position: relative;
+    padding-top: 5vh;
   }
 
+  article {
+    padding-left: 10px;
+  }
+
+  aside img {
+    width: 15vw;
+    position: absolute;
+    right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .space {
+    padding: 5em;
+  }
   
+  .logo {
+    position:absolute;
+    width: 30vw;
+    top: -30vh;
+    left: 35vw;
+  }
+
+  .block {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    background-color: #e3e1e296;
+    padding: 0;   
+    width: 99%;
+    height: 40px;
+  }
+
+  .slideshow {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slide {
+  flex: 0 0 auto;
+  height: 20%;
+  max-width: 100%;
+  scroll-snap-align: center;
+  padding: 10px;
+  transform: translateX(100%);
+  animation: slide-in 0.5s forwards;
+  }
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    display:revert;
+  }
+}

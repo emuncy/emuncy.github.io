@@ -18,6 +18,7 @@ img {
   padding: 10px;
   transform: translateX(100%);
   animation: slide-in 0.5s forwards;
+  height: auto;
 }
 
 @keyframes slide-in {
