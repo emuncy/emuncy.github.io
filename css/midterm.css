@@ -38,15 +38,10 @@ html{
   }
 
   .space {
-    padding: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
   
-  .logo {
-    position:absolute;
-    width: 30vw;
-    top: -30vh;
-    left: 35vw;
-  }
 
   .block {
     margin: 0;
@@ -55,7 +50,7 @@ html{
     background-color: #e3e1e296;
     padding: 0;   
     width: 99%;
-    height: 40px;
+    height: auto;
   }
 
   .slideshow {
@@ -63,6 +58,7 @@ html{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    width: 100%
   }
   
   .slide {
@@ -70,7 +66,6 @@ html{
   height: 20%;
   max-width: 100%;
   scroll-snap-align: center;
-  padding: 10px;
   transform: translateX(100%);
   animation: slide-in 0.5s forwards;
   }
