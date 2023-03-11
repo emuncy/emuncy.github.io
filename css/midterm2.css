@@ -1,0 +1,116 @@
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f6f4f5;
+}
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    color: #656F5C;
+    font-size: 10em;
+    text-align: center;
+    background-color: #f6f4f5aa;
+    position: relative;
+    top: 30%;
+  }
+
+  h2 {
+    color: #656F5C;
+  }
+
+  p {
+    color: #031926;
+    
+  }
+
+  header{
+    background-image: url(/img/Portfolio_Rose.png);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: top;
+    height: 100vh;
+  }
+
+  .about {
+    background-color:#031926d2;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+  }
+
+  .about article p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#f6f4f5;
+    line-height: 1.75em;
+    position: relative;
+    top: 5em;
+  }
+
+  article {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about aside img {
+    height: 70vh;
+  }
+
+  ul {
+    list-style: none;
+    width: 95%;
+    margin: 0;
+    padding: 1em;
+    padding-top: 5em;
+    padding-left: 2em;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 1em;
+    justify-content: space-evenly;
+  }
+
+  li {
+    opacity: 0.5;
+  }
+
+  li:hover {
+    opacity: 1;
+  }
+
+  li:focus {
+    display: revert;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    header {
+        background-size: 100%;
+    }
+
+    h1 {
+        font-size: 5em;
+        top: 20%;
+    }
+
+    .about {
+        display: revert;
+    }
+
+    ul {
+        display: revert;
+        padding-left: 1em;
+    }
+
+    aside {
+        padding-top: 8em;
+    }
+  }

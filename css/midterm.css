@@ -21,8 +21,8 @@ html{
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 0px;
-    position: relative;
+    gap: 10px;
+    position: static;
     padding-top: 5vh;
   }
 
@@ -43,7 +43,7 @@ html{
   }
   
 
-  .block {
+  /* .block {
     margin: 0;
     position: absolute;
     top: 0;
@@ -51,31 +51,8 @@ html{
     padding: 0;   
     width: 99%;
     height: auto;
-  }
-
-  .slideshow {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    width: 100%
-  }
+  } */
   
-  .slide {
-  flex: 0 0 auto;
-  height: 20%;
-  max-width: 100%;
-  scroll-snap-align: center;
-  transform: translateX(100%);
-  animation: slide-in 0.5s forwards;
-  }
-
-@keyframes slide-in {
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @media only screen and (max-width: 500px) {
   main {
     display:revert;
