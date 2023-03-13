@@ -1,8 +1,8 @@
 # emuncy.github.io
 
 ## Projects
-- HTML
-- CSS
+- [HTML](https://emuncy.github.io/html-midterm/page5.html)
+- [CSS](https://emuncy.github.io)
 - JS
 ## In-Class Assignments
 - [ICA1](https://emuncy.github.io/ica/Ellie%20Muncy%20ICA1%20--%20How%20to%20Search.docx)

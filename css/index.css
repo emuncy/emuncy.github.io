@@ -64,7 +64,7 @@ html{
     height: 70vh;
   }
 
-  ul {
+  .grid ul {
     list-style: none;
     width: 95%;
     margin: 0;
@@ -76,19 +76,55 @@ html{
     grid-template-rows: 50% 50%;
     gap: 1em;
     justify-content: space-evenly;
+    margin-bottom: 6em;
   }
 
-  li {
+  .grid ul li {
     opacity: 0.5;
   }
 
-  li:hover {
+  .grid ul li:hover {
     opacity: 1;
   }
 
-  li:focus {
-    display: revert;
-    width: 100%;
+  .grid2 {
+    background-color:#031926d2;
+    margin: 6em;
+    margin-bottom: 3em;
+    margin-top: 0;
+    padding: 0.25em;
+  }
+
+  .grid2 ul {
+    list-style: none;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color:#f6f4f5;
+    font-size: 1.5em;
+  }
+
+
+  a {
+    outline: none;
+    text-decoration: none;
+  }
+
+  a:link {
+    color:#f6f4f5;
+  }
+
+  a:visited {
+    color:#f6f4f5;
+  }
+
+  a:hover, a:focus {
+    color: #656F5C;
+    background-color: #f6f4f5aa;
+    padding: 0.25em;
   }
 
   @media only screen and (max-width: 500px) {
@@ -105,12 +141,25 @@ html{
         display: revert;
     }
 
-    ul {
+    .grid ul {
         display: revert;
         padding-left: 1em;
     }
 
     aside {
         padding-top: 8em;
+    }
+
+    .about aside img {
+        height: 40vh;
+      }
+
+    .grid2 ul {
+        font-size: .75em;
+    }
+
+    .grid2 {
+        margin: 2em;
+        padding-top: 0.5em;
     }
   }
