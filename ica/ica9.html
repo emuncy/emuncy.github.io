@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button {
+            border: 10px solid darkolivegreen;
+            padding: 25px 50px;
+            border-radius: 20px;
+            background-color: olive;
+            width: 250px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #square {
+            padding: 10px;
+            width: 250px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="button">
+        <p>Click Me!</p>
+    </div>
+    &nbsp;
+    <div id="square">
+        <p>Test</p>
+    </div>
+
+    <script>
+        console.log("Hello, World!")
+        let btn = document.querySelector("#button");
+        // console.log(btn);
+
+        function changeBtn() {
+            // console.log("This Worked");   
+            btn.textContent = "TEST"; 
+            btn.style.backgroundColor = "darkolivegreen";
+            btn.style.border = "10px solid olive";
+        }
+
+        btn.addEventListener('click', changeBtn);
+
+        let sqr = document.querySelector('#square');
+
+        function changeSqr() {
+            sqr.textContent = "Hello";
+            sqr.style.backgroundColor = "black";
+            sqr.style.color = "white";
+        }
+
+        sqr.addEventListener('mouseover', changeSqr);
+
+        function changeSqrBack() {
+            sqr.style.backgroundColor = "white";
+        }
+
+        sqr.addEventListener('mouseout', changeSqrBack);
+    </script>
+</body>
+</html>
