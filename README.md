@@ -30,7 +30,7 @@
 - [WA7](https://emuncy.github.io/wa/wa7.html)
 - WA8
 - [WA9](https://emuncy.github.io/wa/wa9.html)
-- WA10
+- [WA10](https://emuncy.github.io/wa/assignment9.html)
 - WA11
 - WA12
 - WA13
