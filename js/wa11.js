@@ -7,7 +7,7 @@ answerButton.addEventListener('click', getColors);
 
 const endpoint = 'https://uselessfacts.jsph.pl/api/v2/facts/random?language=en&type=json';
 
-const endpoint2 = 'http://colormind.io/api/model=default'
+const endpoint2 = 'https://www.colr.org/json/scheme/random'
 
 async function getQuote() {
     // console.log('It works!');
@@ -36,7 +36,8 @@ async function getColors() {
             throw Error(response.statusText)
         }
         const json = await response.json();
-        console.log(json);
+        console.log(json.schemes.colors);
+        displayColors(json.schemes.colors);
         
         
     }
@@ -50,4 +51,10 @@ function displayQuote(quote) {
     const quoteText = document.querySelector("#js-quote-text");
     quoteText.textContent = quote;
     // console.log('test')
+}
+
+function displayColors(colors) {
+    const colorText = document.querySelector("#js-answer-text");
+    colorText.textContent = colors;
+    console.log('test')
 }
