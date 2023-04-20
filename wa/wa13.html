@@ -10,11 +10,11 @@
     <script defer src="/js/wa13.js"></script>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <p>Please select the volume you'd like.</p>
         <p class="output">50</p>
     </div>
-    <div> <!-- plus/minus volume changer-->
+    <div>  plus/minus volume changer
         <form>
         <input class="minus-button" type="button" name="minus-button" value="MINUS">
         <input class="plus-button" type="button" name="plus-button" value="PLUS">
@@ -23,13 +23,65 @@
         <input class="submit-button" type="button" name="submit-button" value="SUBMIT">
         </form>
     </div>
-    <div> <!-- This will be a sider-->
+    <div> This will be a sider
         <div class="slidecontainer">
             <p>Please select the volume you'd like.</p>
             <input type="range" min="0" max="100" class="slider" id="myRange">
             <input class="slider-submit-button" type="button" name="slider-submit-button" value="SUBMIT">
             <p class="slider-output"></p>
         </div>
+    </div> -->
+    <h1>Spin for your volume!</h1>
+    <input class="spin-button" type="button" name="spin-button" value="SPIN">
+    <div class="slotcontainer">
+        <div class="slot">
+          <div id=scroll1>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>0</div>
+          </div>
+        </div>
+        <div class="slot">
+          <div id=scroll2>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>0</div>
+          </div>
+        </div>
+        <div class="slot">
+          <div id=scroll3>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>0</div>
+          </div>
+        </div>
+    </div>
+    <div class="button">
+        <p class="result"> </p>
     </div>
 </body>
 </html>
