@@ -71,93 +71,98 @@ function updateOutput() {
 //   sliderOutput.textContent = slider.value;
 // }
 
-var num1 = Math.floor(Math.random()*10);
-var num2 = Math.floor(Math.random()*10);
-var num3 = Math.floor(Math.random()*10);
-// element.style.transform = 'translateY(' + stopValue + '%)';
-
 const spinButton = document.querySelector('.spin-button');
 
+function everything () {
+    var num1 = Math.floor(Math.random()*10);
+    var num2 = Math.floor(Math.random()*10);
+    var num3 = Math.floor(Math.random()*10);
+    console.log("num1 is "+num1);
+    console.log("num2 is "+num2);
+    console.log("num3 is "+num3);
 
-function volume() {
-    let highest = 0;
-    let lowest = 0;
-    if (num1 > num2 && num1 > num3) {
-    highest = num1;    
+    // Runs the math for the volume
+    function volume() {
+        let highest = 0;
+        let lowest = 0;
+        if (num1 > num2 && num1 > num3) {
+            highest = num1;    
+        }
+        if (num1 < num2 && num1 < num3) {
+            lowest = num1;
+        }
+        if (num2 > num1 && num2 > num3) {
+            highest = num2;    
+        }
+        if (num2 < num1 && num2 < num3) {
+            lowest = num2;
+        }
+        if (num3 > num1 && num3 > num2) {
+            highest = num3;    
+        }
+        if (num3 < num1 && num3 < num2) {
+            lowest = num3;
+        }
+        // console.log("The highest number is: " + highest);
+        // console.log("The lowest number is: " + lowest);
+        let range = highest - lowest;
+        finalVolume = 100 - (range*10);
+        console.log("volume is "+finalVolume);
+        const result = document.querySelector(".result");
+        if (finalVolume === 100) {
+            result.textContent = "JACKPOT!!!! Type in your desired volume.";
+            const answer = document.querySelector(".answer");
+            const volInput = document.createElement("input");
+            volInput.type = "text";
+            volInput.class = "volume-input";
+            volInput.value = 0;
+            answer.appendChild(volInput);
+            const submit = document.createElement("input");
+            submit.type = "button";
+            submit.class = "submit-button";
+            submit.value = "SUBMIT";
+            answer.appendChild(submit);
+            const newP = document.createElement("p");
+            newP.class = "submission";
+            answer.appendChild(newP);
+            para = document.querySelector(".submission");
+            submit.addEventListener('click', volInput.value.update);
+            console.log(volInput.value);
+        }
+        else {result.textContent = "So close! Your volume is now "+finalVolume+".";}
     }
-    if (num1 < num2 && num1 < num3) {
-    lowest = num1;
+    volume();
+
+    // The animation
+    var numberSpin = function(selector, num) {
+        var element = document.querySelector(selector);
+        let dur = Math.floor(Math.random() * 3) + 1;
+        // element.style.transform = "translateY(-1000px";
+        // element.style.transitionDuration = dur+"s";
+        // numMath = 10 - num;
+        // if (num === 0) {
+        //     numMath = 10;
+        // } 
+        // element.style.transform = "translateY("+numMath+"00px)";
+        console.log("dur is "+dur);
+        element.style.transform = "translateY(-"+num+"00px)";
+        element.style.transitionDuration = dur+"s";
     }
-    if (num2 > num1 && num2 > num3) {
-    highest = num2;    
-    }
-    if (num2 < num1 && num2 < num3) {
-    lowest = num2;
-    }
-    if (num3 > num1 && num3 > num2) {
-    highest = num3;    
-    }
-    if (num3 < num1 && num3 < num2) {
-    lowest = num3;
-    }
-    console.log("The highest number is: " + highest);
-    console.log("The lowest number is: " + lowest);
-    
-    let range = highest - lowest;
-    finalVolume = 100 - (range*10);
-    console.log(finalVolume)
+    numberSpin ("#scroll1", num1);
+    numberSpin ("#scroll2", num2);
+    numberSpin ("#scroll3", num3);
+
 }
-volume();
-const result = document.querySelector(".result");
-result.textContent = "Your volume is now "+finalVolume+".";
-
-var numberSpin = function(selector) {
-
-}
-
-spinButton.addEventListener('click', numberSpin('scroll1'))
-
-var numberSpin = function(selector) {
-  var element = document.getElementById(selector);
-  var factor = 10 + Math.floor(Math.random()*10);
-  var num = 10;
-  var section = 100/(num + 1);
-  var stopValue = 1;
-  var spin = function(flag, x) {
-    var value = element.style.transform;
-    value = value ? parseFloat(value.split('(')[1].split(')').join('')) : 0;
-    if(flag && flag == true){ 
-      if(stopValue !=1 && (value <= stopValue || (value - section/factor) <= stopValue) && (typeof x != 'undefined' && (value >= x * -section && value <= (x-0.5>=0?x-0.5:stopValue==0?0:0.5) * -section))){ 
-        element.style.transform = 'translateY(' + stopValue + '%)';
-        stopValue = 1;
-        return true; 
+    function scrollUp() {
+        const slot1 = document.querySelector('#scroll1');
+        slot1.style.transform = "translateY(-"+num1+"00px)";
+        slot1.style.transitionDuration = "3s";
+        const slot2 = document.querySelector('#scroll2');
+        slot2.style.transform = "translateY(-"+num2+"00px)";
+        slot2.style.transitionDuration = "3s";
+        const slot3 = document.querySelector('#scroll3');
+        slot3.style.transform = "translateY(-"+num3+"00px)";
+        slot3.style.transitionDuration = "3s";
       }
-      stopValue = Math.floor(value/section) >= -num ? Math.floor(value/section)*section : 0;
-    }
-    if (value && value <= -(section*(num))) {
-      element.style.transform = 'translateY('+ section +'%)';
-      value = 0;
-    } else {
-      value -= section/factor;
-    }
-    element.style.transform = 'translateY(' + value + '%)';    
-    return false;
-  }
-  var spinTimer = setInterval(spin, 10);
-  function stop(delay, x){ 
-     setTimeout(function() {
-        clearTimeout(spinTimer);
-         var stopTimer = setInterval(function(){
-            if(spin(true, x)) { clearInterval(stopTimer); }; 
-        }, 10);
-      }, delay);
-  }
-  return {
-    stop: function(delay, x) {
-      return stop(delay, x);
-    }
-  }
-}
-numberSpin('scroll1').stop(3000 + 100 + Math.floor(Math.random() * 100),9);
-numberSpin('scroll2').stop(3000 + 200 + Math.floor(Math.random() * 100),2);
-numberSpin('scroll3').stop(3000 + 300 + Math.floor(Math.random() * 100),0);
+    
+spinButton.addEventListener('click', everything);
