@@ -83,33 +83,31 @@ function everything () {
 
     // Runs the math for the volume
     function volume() {
-        let highest = 0;
-        let lowest = 0;
-        if (num1 > num2 && num1 > num3) {
-            highest = num1;    
-        }
-        if (num1 < num2 && num1 < num3) {
-            lowest = num1;
-        }
-        if (num2 > num1 && num2 > num3) {
-            highest = num2;    
-        }
-        if (num2 < num1 && num2 < num3) {
+        let highest = num1;
+        let lowest = num1;
+        if (num2 > highest) {
+            highest = num2;
+          }
+          
+          if (num3 > highest) {
+            highest = num3;
+          }
+          
+          if (num2 < lowest) {
             lowest = num2;
-        }
-        if (num3 > num1 && num3 > num2) {
-            highest = num3;    
-        }
-        if (num3 < num1 && num3 < num2) {
+          }
+          
+          if (num3 < lowest) {
             lowest = num3;
-        }
+          }
         // console.log("The highest number is: " + highest);
         // console.log("The lowest number is: " + lowest);
         let range = highest - lowest;
         finalVolume = 100 - (range*10);
+        console.log(highest+","+lowest+","+"range is "+range);
         console.log("volume is "+finalVolume);
         const result = document.querySelector(".result");
-        if (finalVolume === 100) {
+        if (num1 === num2 && num1 === num3) {
             result.textContent = "JACKPOT!!!! Type in your desired volume.";
             const answer = document.querySelector(".answer");
             const volInput = document.createElement("input");
