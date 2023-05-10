@@ -1,0 +1,73 @@
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f6f4f5;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    left: 40%;
+    width: 500px;
+    height: 700px;
+    background-color: #656F5C;
+}
+
+.score {
+    position: absolute;
+    top: 0%;
+    padding-top: 10px;
+}
+
+.current-score {
+    left: 4%;
+}
+
+.high-score {
+    left: 82%;
+    text-align: right;
+}
+
+.trigger {
+    position: absolute;
+    bottom: 2%;
+    cursor: pointer;
+}
+
+.left-trigger {
+    left: 2%;
+}
+
+.right-trigger {
+    left: 90%;
+}
+
+.trapezoid {
+    width: 20px;
+    height: 100px;
+    border-radius: 9px;
+    background-color:#031926;
+    /* border-top: 60px solid #031926;
+    border-right: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 20px solid transparent; */
+    /* transform: perspective(100px) rotateX(30deg); */
+}
+
+.left-paddle {
+    position: absolute;
+    top: 68%;
+    left: 24%;
+    rotate: 120deg;
+    transform-origin: bottom left;
+}
+
+.right-paddle {
+    position: absolute;
+    top: 68%;
+    left: 66%;
+    rotate: -120deg;
+    transform-origin: bottom right;
+}

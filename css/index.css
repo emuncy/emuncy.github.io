@@ -16,6 +16,19 @@ html{
     top: 30%;
   }
 
+  .button {
+    background-color:#656F5C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#f6f4f5;
+    padding: 1em;
+    position: relative;
+    left: 96%;
+  }
+
+  .button:hover {
+    cursor:pointer;
+  }
+
   h2 {
     color: #656F5C;
   }
