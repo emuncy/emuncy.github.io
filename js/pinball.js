@@ -15,7 +15,7 @@ canvas.addEventListener('click', function(event) {
   console.log(`Clicked at (${x}, ${y})`);
 });
 
-// left paddle
+// paddles
 const img = new Image();
 img.src = '/img/left_bumper.png';
 img.onload = function() {
