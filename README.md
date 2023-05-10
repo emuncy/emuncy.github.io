@@ -3,7 +3,7 @@
 ## Projects
 - [HTML](https://emuncy.github.io/html-midterm/page5.html)
 - [CSS](https://emuncy.github.io)
-- JS
+- [JS](https://emuncy.github.io/wa/pinball.html)
 ## In-Class Assignments
 - [ICA1](https://emuncy.github.io/ica/Ellie%20Muncy%20ICA1%20--%20How%20to%20Search.docx)
 - [ICA2](https://emuncy.github.io/ica/Muncy_Ellie%20ICA2%20--%20Exploring%20Directory%20Structures%20(Week%202).docx)

@@ -36,6 +36,26 @@ document.addEventListener("keyup", function(event) {
   }
 });
 
+lbutton = document.querySelector(".left-trigger");
+
+lbutton.addEventListener("mousedown", function() {
+    rotatedL = true;
+});
+
+lbutton.addEventListener("mouseup", function() {
+    rotatedL = false;
+});
+
+rbutton = document.querySelector(".right-trigger");
+
+rbutton.addEventListener("mousedown", function() {
+    rotatedR = true;
+});
+
+rbutton.addEventListener("mouseup", function() {
+    rotatedR = false;
+});
+
 const img2 = new Image();
 img2.src = '/img/right_bumper.png';
 img2.onload = function() {
